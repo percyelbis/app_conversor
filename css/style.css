@@ -53,7 +53,7 @@ input {
 .button-1{
   width:70px;
   height:70px;
-  border:2px solid #888888;
+  border:1px solid #888888;
   outline:none;
   background-color:#f4f5f6;
   border-radius: 12px;
@@ -63,7 +63,7 @@ input {
 .button-2{
   width:320px;
   height:50px;
-  border:2px solid #888888;
+  border:1px solid #888888;
   outline:none;
   background-color:#f4f5f6;
   border-radius: 12px;
@@ -73,7 +73,7 @@ input {
 .run{
   width:75px;
   height:50px;
-  border:2px solid #888888;
+  border:1px solid #888888;
   outline:none;
   background-color:#f4f5f6;
   border-radius: 12px;
