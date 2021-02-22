@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/calculator.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>app_1</title>
+</head>
+<body>
+<!--
+    dec2dms
+-->
+    <h1>Conversor</h1>
+    
+    <h2>Grados Minutos Segundos a Grados Decimales</h2>
+    <p>Grados<input  class = "button-1" type="text" id="g">
+    Minutos <input class = "button-1" type="text" id="m">
+    Segundos <input class = "button-1" type="text" id="s">
+    <button input class = "run" onclick="dms2decimal_input()"><i class="fa fa-calculator"></i> Calcular</button></p>
+    <br>
+    <h2 id="answer"></h2>
+    <script src="js/app.js"></script>
+<!--
+    gms2dec
+-->
+    <h2>Grados Decimales a Grados Minutos Segundos</h2>
+    <p>Grados Decimales <input class = "button-2" type="text" id="dec">
+    <button input class = "run" onclick="decimal2dms_input()"><i class="fa fa-calculator"></i> Calcular</button></p>
+    <br>
+    <h2 id="answer0"></h2>
+
+<!--
+    read csv
+-->
+    <h2>Conversion en lotes a partir de un .csv .txt</h2>
+    <h3 class="info"><i class="fa fa-info-circle"></i> El archivo debe tener el siguiente formato: <mark><br>45.369,12.236,17.125,57.246 ==> nombredearchivo.txt<br> 45-22-8.4,12-14-9.6,17-7-30,57-14-45.6 ==> nombredearchivo.txt </mark> </h3>
+    <p>Archivo .txt .csv <i class="fa fa-upload"></i>  <input class = "select" type="file"></p>
+    <script src="js/csvapp.js"></script>
+<!--
+    Export csv
+-->
+    <p>Click en download txt!!!
+
+    <!-- create an HTML button to download the CSV file on click -->
+    <button input class = "select" onclick="download_file()"><i class="fa fa-download"></i> Download txt </button></p>
+    <h3 class="info"><i class="fa fa-info-circle"></i> Refrescar el navegador para un nuevo proceso.</h3>
+</body>
+</html>
